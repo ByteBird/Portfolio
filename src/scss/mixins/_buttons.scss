@@ -1,0 +1,12 @@
+@mixin card($card,$card-img){
+    #{$card}{
+        width: 300px;
+        height: 300px;
+        border-radius: 9px;
+        background: url(#{$card-img});
+        background-attachment: fixed;
+        background-size: contain;
+        @extend %flex;
+        color: #eee;
+    }
+}
